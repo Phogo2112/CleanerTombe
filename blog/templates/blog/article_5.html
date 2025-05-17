@@ -1,0 +1,72 @@
+{% extends 'DocBlog/base.html' %}
+{% load static %}
+
+{% block titre %} Monument paysager {% endblock %}
+{% block titre_page %}<h1>Monument paysager</h1> {% endblock %}
+
+{% block content %}
+<div class="entretien-bloc">
+    <div class="container">
+        <hr>
+
+        <p>
+            <strong><span class="highlight">Un monument paysager</span></strong> c'est un <strong><span class="highlight">monument sous forme moderne de sépulture</span></strong>, 
+            l'<strong><span class="highlight">aménagement naturel</span></strong> de style <strong><span class="highlight">végétal</span></strong>, 
+            <strong><span class="highlight">minéral</span></strong> ou <strong><span class="highlight">floral</span></strong>.
+            Ça donne un petit mélange <strong><span class="highlight">pierre</span></strong>, 
+            <strong><span class="highlight">plante</span></strong>, 
+            <strong><span class="highlight">gravier</span></strong>, 
+            <strong><span class="highlight">petit arbre</span></strong> ou <strong><span class="highlight">arbuste</span></strong>.
+            Il peut y avoir une petite <strong><span class="highlight">stèle</span></strong> ou une simple <strong><span class="highlight">plaque avec des gravures</span></strong>.
+            Le but de ce monument est de se <strong><span class="highlight">fondre dans la nature</span></strong> pour un <strong><span class="highlight">hommage doux et vivant</span></strong>.
+        </p>
+
+        <div class="section-title">
+            <h3>L'entretien de ce monument</h3>
+        </div>
+
+        <p>
+            Il y a un <strong><span class="highlight">entretien des plantes</span></strong>, un <strong><span class="highlight">arrosage régulier</span></strong> selon la saison,
+            la <strong><span class="highlight">taille des arbustes</span></strong>, des <strong><span class="highlight">fleurs</span></strong> ou <strong><span class="highlight">couvre-sol</span></strong> 
+            afin qu'ils ne débordent pas. Remplacer les <strong><span class="highlight">plantes mortes ou abîmées</span></strong>.
+        </p>
+
+        <p>
+            Il y a un <strong><span class="highlight">balayage des graviers</span></strong> ou du <strong><span class="highlight">paillage</span></strong> pour les remettre en place,
+            un <strong><span class="highlight">nettoyage de la stèle ou de la plaque en pierre</span></strong> avec une <strong><span class="highlight">éponge douce</span></strong>, 
+            du <strong><span class="highlight">savon doux</span></strong> et de <strong><span class="highlight">l'eau</span></strong>.
+            Rincer et sécher délicatement afin de supprimer les traces du nettoyage.
+            Enlever les <strong><span class="highlight">mauvaises herbes</span></strong> manuellement pour retrouver le côté naturel du monument.
+        </p>
+
+        <div class="section-title">
+            <h3>Fréquence d'entretien recommandée</h3>
+        </div>
+
+        <p>
+            Il est recommandé de <strong><span class="highlight">vérifier les plantes</span></strong>, 
+            l'<strong><span class="highlight">arrosage</span></strong> puis <strong><span class="highlight">tailler légèrement les fleurs et les arbustes</span></strong> 
+            <strong><span class="highlight">1 fois par mois</span></strong> durant la période <strong><span class="highlight">printemps et été</span></strong> 
+            pour leur faire garder une belle silhouette.
+        </p>
+
+        <p>
+            Il est également recommandé de faire un <strong><span class="highlight">entretien tous les deux à trois mois</span></strong> en <strong><span class="highlight">automne</span></strong> 
+            et en <strong><span class="highlight">hiver</span></strong>, qui consiste à <strong><span class="highlight">nettoyer les feuilles mortes</span></strong>, 
+            <strong><span class="highlight">protéger les plantes</span></strong> d'un <strong><span class="highlight">voile d'hivernage</span></strong> 
+            et d’un <strong><span class="highlight">paillage</span></strong>.
+        </p>
+
+    </div>
+</div>
+{% block boutton %}
+
+<div class="boutton_tarif">
+    <ul>
+        <li>
+            <a href="{% url 'tarif' 5 %}">Tarif</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}
+{% endblock %}

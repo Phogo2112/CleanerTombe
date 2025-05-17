@@ -1,0 +1,44 @@
+{% extends "DocBlog/base.html" %}
+{% load static %}
+<!-- titre de page favicon -->
+
+{% block titre %} Les suppléments des entretien {% endblock %}
+
+<!-- titre de la page -->
+
+{% block titre_page %} <h1> Tarifs des suppléments</h1> {% endblock %}
+
+<!-- contenue de la main -->
+ 
+{% block content %}
+<section class="tarif">
+    {% for prix in prix_speciale %}
+    <div class="etiquettes">
+        {% if prix.prix == 'suppléments' %}
+        <a href="{% url 'tarif' 8 %}"><div class="badge_click aggrandissement" >cliquer ici</div></a>
+        {% endif %}
+        <h2>{{ prix.name }}</h2>
+        <p>{{ prix.prix }} <br>{{ prix.explication }}</p>
+        <hr>
+
+        <ul>
+            {% if prix.devis %}<li><strong>{{ prix.devis }}</strong></li>
+            <hr>{% endif %}
+
+            <div class="description">
+                {% if prix.mention1 %}<li>{{ prix.mention1 }}</li>{% endif %}
+                {% if prix.mention2 %}<li>{{ prix.mention2 }}</li>{% endif %}
+                {% if prix.mention3 %}<li>{{ prix.mention3 }}<br><br>{{ prix.but }}</li>{% endif %}
+                {% if prix.mention4 %}<li>{{ prix.mention4 }}</li>{% endif %}
+                {% if prix.mention5 %}<li>{{ prix.mention5 }}</li>{% endif %}
+                {% if prix.mention6 %}<li>{{ prix.mention6 }}</li>{% endif %}
+                {% if prix.mention7 %}<li>{{ prix.mention7 }}</li>{% endif %}
+                {% if prix.mention8 %}<li>{{ prix.mention8 }}</li>{% endif %}
+            </div>
+        </ul>
+    </div>
+
+    {% endfor %}
+</section>
+
+{% endblock %}

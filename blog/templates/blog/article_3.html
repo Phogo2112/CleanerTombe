@@ -1,0 +1,70 @@
+{% extends 'DocBlog/base.html' %}
+{% load static %}
+
+{% block titre %} Columbarium {% endblock %}
+{% block titre_page %}<h1>Columbarium</h1> {% endblock %}
+
+
+
+{% block content %}
+
+
+<div class="entretien-bloc">
+    <div class="container">
+        <hr>
+
+        <p>
+            <strong><span class="highlight">Un columbarium</span></strong> c’est une <strong><span class="highlight">structure collective</span></strong> qui se trouve sous forme de <strong><span class="highlight">mur</span></strong>, une <strong><span class="highlight">tour</span></strong> ou un <strong><span class="highlight">bâtiment</span></strong>, 
+            qui est composé de plusieurs compartiments que l’on appelle une <strong><span class="highlight">niche</span></strong> 
+            qui est fermée par une <strong><span class="highlight">plaque</span></strong> qui peut être en <strong><span class="highlight">granit</span></strong>, en <strong><span class="highlight">marbre</span></strong> ou en <strong><span class="highlight">pierre</span></strong>. 
+            Chacune de ces niches peut accueillir <strong><span class="highlight">1 à 4 urnes funéraires</span></strong>. 
+            On peut y retrouver des <strong><span class="highlight">fleurs naturelles</span></strong> ou <strong><span class="highlight">artisanales</span></strong>, il peut y avoir des <strong><span class="highlight">photos souvenirs protégées</span></strong> et des <strong><span class="highlight">lanternes</span></strong> 
+            avec une <strong><span class="highlight">bougie à l'intérieur</span></strong> pour les allumer pendant les visites.
+        </p>
+
+        <div class="section-title">
+            <h3>L’entretien d’un columbarium</h3>
+        </div>
+
+        <p>
+            On commence par <strong><span class="highlight">dépoussiérer la plaque</span></strong> avec un chiffon, puis on <strong><span class="highlight">lave la plaque</span></strong> 
+            avec de l’eau et du savon doux. On <strong><span class="highlight">frotte à l'aide d’une brosse douce</span></strong> doucement afin de ne pas détériorer la pierre 
+            et effacer les gravures sur la plaque. 
+            <strong><span class="highlight">Rincer et sécher</span></strong> avec un chiffon doux pour enlever les traces.
+        </p>
+
+        <div class="section-title">
+            <h3>Nettoyage des ornements et souvenirs</h3>
+        </div>
+
+        <p>
+            Le nettoyage des ornements se fait à l'aide de <strong><span class="highlight">chiffons doux</span></strong> et de <strong><span class="highlight">savon doux</span></strong>. 
+            L’on <strong><span class="highlight">frotte doucement</span></strong> en cas de gravure, puis l’on <strong><span class="highlight">rince</span></strong> 
+            et l’on <strong><span class="highlight">sèche</span></strong> à la fin du nettoyage pour effacer les traces.
+        </p>
+
+        <div class="section-title">
+            <h3>Fréquence d’entretien recommandée</h3>
+        </div>
+
+        <p>
+            Il est recommandé de faire un <strong><span class="highlight">entretien 2 à 4 fois par an</span></strong>. 
+            Les périodes recommandées sont au début du <strong><span class="highlight">printemps</span></strong>, avant la <strong><span class="highlight">Toussaint</span></strong>, 
+            avant l’<strong><span class="highlight">hiver</span></strong> afin d’éviter que la saleté s’incruste pendant les périodes froides, 
+            puis en <strong><span class="highlight">été</span></strong> si la niche se trouve exposée au <strong><span class="highlight">soleil</span></strong>, à la <strong><span class="highlight">poussière</span></strong> ou à la <strong><span class="highlight">pollution</span></strong>.
+        </p>
+    </div>
+</div>
+
+
+{% block boutton %}
+
+<div class="boutton_tarif">
+    <ul>
+        <li>
+            <a href="{% url 'tarif' 3 %}">Tarif</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}
+{% endblock %}

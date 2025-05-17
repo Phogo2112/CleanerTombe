@@ -1,0 +1,77 @@
+{% extends 'DocBlog/base.html' %}
+{% load static %}
+
+{% block titre %} Jardin de souvenir {% endblock %}
+{% block titre_page %} <h1>Jardin de souvenir</h1> {% endblock %}
+
+{% block content %}
+<div class="entretien-bloc">
+    <div class="container">
+        <hr>
+
+        <p>
+            <strong><span class="highlight">un jardin de souvenir</span></strong> c’est un <strong><span class="highlight">espace collectif</span></strong> destiné à la <strong><span
+                    class="highlight">dispersion des cendres</span></strong> après une crémation.
+            Il y a souvent un <strong><span class="highlight">carré de pelouse</span></strong>, un <strong><span
+                    class="highlight">parterre de fleurs</span></strong> ou une <strong><span class="highlight">zone
+                    aménagée</span></strong>.
+            Il peut y avoir des <strong><span class="highlight">monuments</span></strong> comme des stèles ou un mur
+            pour des <strong><span class="highlight">plaques commémoratives</span></strong>.
+            Il ne dispose pas de <strong><span class="highlight">tombes individuelles</span></strong>, l'espace est
+            partagé avec les autres familles.
+        </p>
+
+        <div class="section-title">
+            <h3>L'entretien d'un jardin de souvenirs</h3>
+        </div>
+
+        <p>
+            On commence par <strong><span class="highlight">ramasser les feuilles mortes</span></strong>, les
+            <strong><span class="highlight">fleurs fanées</span></strong> et les déchets éventuels.
+            Ensuite, on <strong><span class="highlight">balaye délicatement</span></strong> les graviers ou copeaux de
+            bois.
+            Après, il est important de <strong><span class="highlight">nettoyer les plaques
+                    commémoratives</span></strong> à l'aide d'une éponge douce, d'eau et de savon doux.
+            Il faut <strong><span class="highlight">frotter doucement</span></strong> afin d'éviter d'effacer les
+            gravures.
+            Ensuite, il faut <strong><span class="highlight">enlever la mauvaise herbe</span></strong> autour des
+            stèles.
+        </p>
+
+        <div class="section-title">
+            <h3>L'entretien des ornements</h3>
+        </div>
+
+        <p>
+            Les ornements utilisés sont souvent des <strong><span class="highlight">fleurs naturelles</span></strong> de
+            préférence.
+            L'entretien consiste a <strong><span class="highlight">vérifier l'état des fleurs</span></strong>.
+        </p>
+
+        <div class="section-title">
+            <h3>La fréquence d'entretien recommandée</h3>
+        </div>
+
+        <p>
+            Il est recommandé de faire un <strong><span class="highlight">entretien 4 fois par an</span></strong>
+            minimum, au début du printemps après l'hiver afin de remettre au propre.
+            Avant la <strong><span class="highlight">Toussaint</span></strong> vers fin octobre pour la période de
+            recueillement.
+            Au début de l'été pour <strong><span class="highlight">rafraîchir après les pluies du
+                    printemps</span></strong>.
+            Puis avant l'hiver pour <strong><span class="highlight">enlever les feuilles mortes</span></strong> et
+            préparer le sol.
+        </p>
+    </div>
+</div>
+{% block boutton %}
+
+<div class="boutton_tarif">
+    <ul>
+        <li>
+            <a href="{% url 'tarif' 4 %}">Tarif</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}
+{% endblock %}

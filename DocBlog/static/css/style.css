@@ -1,0 +1,976 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,497;1,497&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,497;1,497&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: #f5f0f2dc;
+    font-size: 35px;
+    text-align: center;
+    padding: 30px 0 50px 0;
+}
+
+h2 {
+
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+/* largeur de la page minimum */
+.centre_element {
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Les balise */
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+a[href^="mailto:"],
+a[href^="tel:"] {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+main {
+    background: linear-gradient(45deg, #031d69 10%, #872341 80%, #E17564 80%, #031d69 95%);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 120px;
+}
+
+/* les classe des header */
+
+.en_tete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #09122C;
+    padding: 10px 30px;
+}
+
+.centre {
+    display: flex;
+    gap: 20px;
+    color: aliceblue;
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* le header du site */
+header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* pour rester au-dessus des autres éléments */
+}
+
+.logo {
+    padding: 0;
+    margin: 0;
+}
+
+.centre li a {
+    font-weight: 400;
+    font-size: 24px;
+    position: relative;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.centre li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #FFD700;
+    /* couleur du soulignement */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.center li a:hover {
+
+    /* une couleur dorée par exemple */
+    text-decoration: underline;
+    color: #FFD700;
+}
+
+.centre li a:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: #E17564;
+    padding: 100px 0px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+footer a:hover {
+    color: #031d69;
+    text-decoration: underline;
+    text-decoration-color: #FFD700;
+}
+
+.box_3 .reseaux p {
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Roboto', 'sans-serif';
+    margin: 0 20px;
+    color: #031d69;
+
+}
+
+.box_3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.bas_de_page .box_1 li {
+    padding: 10px 0px;
+}
+
+.bas_de_page .box_2 li {
+    padding: 10px 0px;
+}
+
+.box_3 img {
+
+    width: 40px;
+    height: 40px;
+}
+
+.bas_de_page {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* acceuil du site */
+.accueil_texte a {
+    text-decoration: underline;
+    text-decoration-color: #faf7f8;
+}
+.devis_gratuit li{
+    padding: 0 0 30px;
+}
+.devis_gratuit{
+    text-align: center;
+    font-size: 20px;
+    
+}
+.devis_gratuit li strong {
+    margin: 50px;
+    padding: 15px;
+    border: 2px solid green;
+    color:#faf7f8;
+    text-align: center;
+    background-color: #09122C;
+}
+
+.accueil_texte a:hover {
+    color: #09122C;
+    text-decoration-color: yellow;
+}
+
+
+
+.texte_image {
+    color: #f5f0f2f3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    align-items: center;
+
+}
+
+.etiquettes ul li {
+    font-size: 16px;
+    font-weight: 450;
+}
+
+.description {
+    text-align: left;
+    margin-top: 15px;
+}
+
+
+.etiquettes ul li strong {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.bloc_accueil h2 {
+    color: rgba(255, 255, 255, 0.750);
+}
+
+
+.bloc_accueil strong,
+em {
+    color: #7eaf0b;
+
+}
+
+
+.bloc_accueil p {
+    background: rgba(255, 255, 255, 0.05);
+    max-width: 850px;
+    box-sizing: border-box;
+    line-height: 1.7;
+    font-size: 18px;
+    padding: 15px;
+
+}
+
+.bas_accueil {
+    padding-bottom: 50px;
+}
+
+.separateur-style {
+    border: none;
+    height: 2px;
+    background-color: white;
+    margin: 40px auto;
+    width: 85%;
+    opacity: 0.6;
+}
+
+
+/* page Tarif */
+
+.box_prix {
+    padding: 15px;
+    margin: 15px;
+}
+
+.tarif_simple {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    font-size: 15px;
+}
+
+.prix_basique {
+    display: flex;
+    flex-direction: column;
+}
+
+.tarif_simple h3 {
+    font-size: 25px;
+    background-color: #09122C;
+    color: white;
+    margin: 15px;
+    padding: 15px;
+}
+
+
+.tarif_simple h4 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+.tarif_simple h3,
+h4 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 497;
+    font-style: normal;
+}
+
+/* Bloc-tarif */
+
+
+.tarif {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.etiquette-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.badge_click {
+    position: absolute;
+    text-align: center;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* chevauchement de la carte */
+    background-color: white;
+    color: #872341;
+    padding: 8px 40px;
+    border-radius: 20px;
+    border: 3px solid #031d69;
+    /* effet intégré dans la carte blanche */
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+.badge {
+    position: absolute;
+    text-align: center;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* chevauchement de la carte */
+    background-color: white;
+    color: #872341;
+    padding: 8px 40px;
+    border-radius: 20px;
+    border: 3px solid #031d69;
+    /* effet intégré dans la carte blanche */
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+
+.etiquettes {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+    /* pour laisser de la place au badge */
+}
+
+.etiquettes h2 {
+    color: #872341;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.etiquettes p {
+    margin: 20px 0;
+    font-size: 40px;
+    color: #031d69;
+}
+
+.etiquettes ul li {
+    padding: 5px 0 5px;
+}
+
+.etiquettes .explication {
+    font-size: 20px;
+}
+
+/* __mention legale__ */
+
+
+.mention_legal .mention_titre {
+    font-size: 2rem;
+    text-align: center;
+    padding: 30px;
+}
+
+.moi_mention ul li {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.moi_mention {
+    margin: 0 0 20px 0;
+}
+
+.mention_legal .box_1 p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.mention_legal .box_1 {
+    margin: 0 0 30px 0;
+}
+
+.mention_legal .texte_loie {
+    font-size: 22px;
+    font-weight: 450;
+    margin-bottom: 50px;
+}
+
+/* __zone geographique__ */
+.ville{
+    color: #e0e0e0;
+} 
+.ville .highlight{
+    color: #7eaf0b;
+
+
+}
+.ville_0frais {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ville_0frais li {
+    margin: 20px;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: #f0f0f0;
+    /* gris clair */
+    opacity: 1;
+    /* pleine opacité */
+    border-radius: 8px;
+    list-style: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+
+
+.ville_0frais li:hover {
+    background-color: #e0e0e0;
+}
+
+.ville p {
+    font-size: 18px;
+}
+
+.ville {
+    font-size: 18px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+
+
+.ville a {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.text_photo img {
+    padding: 20px 10px;
+}
+
+.text_photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*___ contact ___*/
+
+.contact_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.container_contact {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.map-container {
+    margin-bottom: 30px;
+}
+
+.centered-container {
+    background-color: #09122C;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+}
+
+.logo_nom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.infos_contact {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.infos_contact h2 a {
+
+    text-decoration: underline;
+    text-decoration-color: #872341;
+    text-decoration-thickness: 2px;
+    font-weight: bold;
+}
+
+.infos_contact h2 a:hover {
+    text-decoration: underline;
+    text-decoration-color: #FFD700;
+}
+
+
+.horaires h2 {
+    margin: 10px 0;
+}
+
+.horaires {
+    background-color: #872341;
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+}
+
+.horaires ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.horaires li {
+    margin: 8px 0;
+}
+
+.infos_contact h2 a :hover {
+    text-decoration: underline;
+}
+
+/*_____ Le Blog _____*/
+hr {
+    border: none;
+    height: 2px;
+    background-color: #872341;
+}
+
+.grid {
+    background-color: #5555554b;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    color: #872341;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+
+/*____ pattern article blog ____*/
+
+.entretien-bloc {
+    background-color: #f7f7f7;
+    padding: 50px 20px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Titre principal de l'article */
+.entretien-bloc h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #872341;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #872341;
+}
+
+/* Paragraphes classiques */
+.entretien-bloc p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 20px 0;
+}
+
+/* Titre de section */
+.entretien-bloc .section-title {
+    font-size: 1.6rem;
+    margin-top: 30px;
+    color: #872341;
+    border-bottom: 2px solid #872341;
+    padding-bottom: 10px;
+}
+
+/* Mots importants ou en évidence */
+.entretien-bloc .highlight {
+    color: #FF5722;
+    font-weight: bold;
+}
+
+/* Listes à puces */
+.entretien-bloc ul {
+    margin-top: 20px;
+    padding-left: 25px;
+    list-style-type: disc;
+}
+
+.entretien-bloc li {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Conteneur centré */
+.entretien-bloc .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title li {
+    margin: 0px;
+    padding: 10px;
+}
+
+/*____ boutton tarif ____*/
+
+.boutton_tarif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 65px 0 40px 0;
+}
+
+.boutton_tarif li {
+    list-style: none;
+    margin: 0;
+}
+
+.boutton_tarif li a {
+    font-size: 1.8rem;
+    /* Texte plus grand */
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 20px 50px;
+    /* Plus de padding = plus gros bouton */
+    border-radius: 10px;
+    border: 3px solid white;
+    transition: all 0.3s ease;
+}
+
+.boutton_tarif li a:hover {
+    background-color: #09122C;
+    color: #ffffff;
+    border-color: #09122C;
+    transform: scale(1.05);
+    /* Légère animation au survol */
+}
+
+/* Animation */
+.slide-right {
+    -webkit-animation: slide-right .5s cubic-bezier(.25, .46, .45, .94) both;
+    animation: slide-right .5s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+/* Mobile - Portrait (téléphones) */
+@media (max-width: 768px){
+
+    /* Styles spécifiques pour les petits écrans */
+    main {
+        padding-top: 80px;
+    }
+
+    /* page contact */
+    h1 {
+        margin: 0;
+        padding: 0 0 20px;
+        font-size: 28px;
+
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .logo_nom h2 {
+        display: none;
+    }
+
+    .logo_nom {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .centered-container {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .centered-container h2,
+    .centered-container a,
+    .infos_contact,
+    .horaires li {
+        font-size: 14px;
+    }
+
+    .centered-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 300px;
+        /* ajuste selon ton design */
+    }
+
+    .infos_contact {
+        text-align: center;
+        /* garde l’alignement à gauche comme demandé avant */
+    }
+
+    .horaires {
+        text-align: center;
+    }
+
+    .horaires ul {
+        padding: 0;
+    }
+
+    /* carte tarif */
+
+
+    .card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .card h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .tarif {
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    /* ettiquette format tel */
+    .etiquettes {
+        width: 100%;
+        /* prendre toute la largeur du conteneur */
+        padding: 15px;
+    }
+
+    .etiquettes h2 {
+        font-size: 18px;
+    }
+
+    .etiquettes p {
+        font-size: 28px;
+    }
+
+    .etiquettes .explication {
+        font-size: 16px;
+    }
+
+    .badge,
+    .badge_click {
+        font-size: 12px;
+        padding: 6px 20px;
+        top: -30px;
+    }
+
+    .texte_image img {
+        display: none;
+    }
+
+    .bas_de_page {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box_3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    .bas_de_page .box_1,
+    .bas_de_page .box_2 {
+        position: relative;
+        z-index: 1;
+        margin-top: 80px;
+
+    }
+
+    .box_3 img {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer {
+        padding: 120px 0 80px;
+    }
+
+    .centre {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 10px;
+        /* ajustable : colle aux bords sans toucher l’écran */
+        list-style: none;
+        margin: 0;
+
+    }
+
+    .centre li {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .centre li a {
+        font-size: 18px;
+    }
+
+    .ville_0frais li {
+        font-size: 18px;
+
+    }
+    .ville_0frais{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* suppression des annimation */
+
+}
+
+/* Mobile - Paysage */
+
+
+@media (max-width: 768px) {
+    .slide-right {
+        animation: none !important;
+        -webkit-animation: none !important;
+        transform: none !important;
+    }
+}

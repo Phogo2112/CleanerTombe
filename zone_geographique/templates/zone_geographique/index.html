@@ -1,0 +1,48 @@
+{% extends 'DocBlog/base.html' %}
+{% load static %}
+<!-- titre -->
+{%block titre%}Zone geographique{% endblock %}
+<!-- titre page -->
+{% block titre_page %} <h1>Zone geographique</h1> {% endblock %}
+
+<!-- contenue main -->
+
+{% block content %}
+<div class="text_photo">
+<p class="ville">Voici les villes desservies par mes services. <Strong><span class="highlight"> Pour les villes non inscrites sur cette page</span></Strong> il faudra faire appelle par <Strong><span class="highlight"><a href="tel:+33755667761">téléphone</a> </span>ou par <Strong><span class="highlight"><a href="mailto:cleanertombe85@gmail.com">mail</a></span> pour des informations complémentaires et un tarif précis des prestations. </p>
+</div>
+<!-- ettiquette des ville avec éffets -->
+<div class="ville_0frais">
+    <ul class="zone_1">
+        <li><strong>Notre_Dame_de_Riez</strong></li>
+        <li><strong>Froidfond</strong></li>
+        <li><strong>Falleron</strong></li>
+        <li><strong>Saint-Paul-Mont-Penit</strong></li>
+        <li><strong>Grand'Landes</strong></li>
+        <li><strong>St_etienne_de_mer_morte</strong></li>
+    </ul>
+
+    <ul class="zone_2">
+        <li><strong>Saint-Étienne-du-Bois</strong></li>
+        <li><strong>Le Fenouiller</strong></li>
+        <li><strong>Soullans</strong></li>
+        <li><strong>Saint-Gervais</strong></li>
+        <li><strong>Beauvoir-sur-Mer</strong></li>
+    </ul>
+    <ul class="zone_3">
+        <li><strong>Apremont</strong></li>
+        <li><strong>La Garnache</strong></li>
+        <li><strong>Commequiers</strong></li>
+        <li><strong>Challans</strong></li>
+        <li><strong>Maché</strong></li>
+    </ul>
+    <ul class="zone_4">
+        <li><strong>Saint-Hilaire-de-Riez</strong></li>
+        <li><strong>saint-Gille-Croix-de-vie</strong></li>
+        <li><strong>Coëx</strong></li>
+        <li><strong>Legé</strong></li>
+        <li><strong>St_étienne_du_bois</strong></li>
+
+    </ul>
+</div>
+{% endblock %}

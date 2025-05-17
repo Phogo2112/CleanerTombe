@@ -1,0 +1,120 @@
+<!-- {% load static %} -->
+<!-- templates/DocBlog/base.html  -->
+<!DOCTYPE html>
+<html lang="fr-fr">
+
+<head>
+    <meta property="og:title" content="CleanerTombe - Entretien de sépultures en Vendée">
+    <meta property="og:description"
+        content="Professionnalisme et respect pour vos proches disparus. Découvrez nos prestations.">
+    <meta property="og:image" content="{% static 'images/apercu_facebook.jpg' %}">
+    <meta property="og:url" content="https://www.cleanertombe.fr">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> {% endblock %}
+    <link rel="icon" type="image/png" href="{% static 'css/favicon.png' %}">
+    <title> {% block titre %} CleanerTombe - Entretien de sépultures {% endblock %}</title>
+</head>
+
+<body>
+    <header>
+        <ul class="en_tete">
+
+            <!-- Click logo -->
+
+            <div class="logo">
+                <a href="{% url 'index-du-site' %}">
+                    <img src="{% static 'css/favicon.png' %}" alt="Logo CleanerTombe"
+                        style="width: 100px; height: auto;">
+                </a>
+            </div>
+
+            <!-- header page  -->
+            <div class="centre">
+                <li><a href="{% url 'index-du-site' %}">Accueil</a></li>
+            </div>
+            <div class="centre">
+                <li><a href="{% url 'Blog' %}">Blog</a></li>
+            </div>
+            <div class="centre">
+                <li><a href="{% url 'Tarif' %}">Tarifs</a></li>
+            </div>
+            <div class="centre">
+                <li><a href="{% url 'Contact' %}">Contact</a></li>
+            </div>
+        </ul>
+    </header>
+
+    <main>
+        <!-- photo de fond de page -->
+        {% block sans_barre-titre %}
+
+        <!-- Contenue titre des pages -->
+        <div class="avant_container">
+            <div class="titre_principale">
+                {% block titre_page %}
+
+                {% endblock %}
+            </div>
+
+            {% endblock %}
+            <!-- contenue de main page ... -->
+            {% block sans_container %}
+            <div class="container">
+                {% block sans_centre_element %}
+                <div class="centre_element">
+                    {% block fond_container %}
+    
+                    {% block content %}
+                    
+                    {% block boutton %}
+
+                    {% endblock %}
+                    {% endblock %}
+                    {% endblock %}
+                </div>
+                {% endblock %}
+            </div>
+        </div>
+        {% endblock %}
+    </main>
+
+    <footer>
+        <div class="bas_de_page container">
+            <ul class="box_1">
+                <li><a href="tel:0755667761">07 55 66 77 61</a></li>
+                <li><a href="mailto:cleanertombe85@gmail.com">cleanertombe85@gmail.com</a></li>
+                <li><a href="{% url 'Contact' %}">Contact</a></li>
+                <li>
+                    <a href="{% url 'zone_geographique' %}">Zone géographique</a>
+                </li>
+            </ul>
+
+            <ul class="box_3">
+                <li><div class="reseaux"><a href="https://www.facebook.com/profile.php?id=61567835571913">
+                        <img src="{% static 'css/facebook.png' %}" alt="facebook"><p>facebook</p></a>
+                    </div></li>
+                        
+                <li><div class="reseaux"><a href="https://www.instagram.com/cleanertombefr/">
+                        <img src="{% static 'css/instagram.png' %}" alt="insta"><p>instagram</p></a>
+                        
+                    </div>
+                    </li>
+                <li><div class="reseaux"><a href="https://x.com/DainSulyva48960">
+                        <img src="{% static 'css/twitter.png' %}" alt="twitter"><p>twitter</p></a>
+                    </div>
+                    </li>
+            </ul>
+
+            <ul class="box_2">
+                <li><a href="{% url 'mention' %}">Mentions légales</a></li>
+                <li><a href="{% url 'Blog' %}">Blog</a></li>
+                <li><a href="{% url 'index-du-site' %}">Acceuil</a></li>
+                <li><a href="{% url 'Tarif' %}">Tarif</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

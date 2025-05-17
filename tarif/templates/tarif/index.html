@@ -1,0 +1,30 @@
+{% extends "DocBlog/base.html" %}
+{% load static %}
+
+<!-- titre de page favicon -->
+
+{% block titre %} Tarif {% endblock %}
+
+<!-- titre de la page -->
+
+{% block titre_page %} <h1>T a r i f s</h1> {% endblock %}
+
+
+<!-- contenue de la main -->
+
+{% block content %}
+<div class="grid">
+    {% for t in index_tarif %}
+      <div class="card">
+        <h2>{{ t.name }}</h2>
+        {% if t.image %}
+          <a href="{% url 'tarif' t.id %}">
+            <img src="{% static t.image %}" alt="{{ t.name }}">
+          </a>
+        {% else %}
+          <p>Aucune image disponible</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

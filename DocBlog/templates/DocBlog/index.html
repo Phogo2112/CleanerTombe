@@ -1,0 +1,87 @@
+{% extends "DocBlog/base.html" %}
+{% load static %}
+
+<!-- titre de page favicon -->
+
+{% block titre %} Accueil {% endblock %}
+
+<!-- titre de la page -->
+
+
+{% block sans_barre-titre %}
+
+{% endblock %}
+
+<!-- contenue de la main -->
+{% block sans_container %}
+<!-- supprime le .container -->
+<div class="avant_container">
+    {% block content %}
+    <div class="bloc_accueil">
+        <h1>CleanerTombe</h1>
+
+        <div class="devis_gratuit">
+            <li><strong>Devis gratuit !!! </strong>
+            </li>
+        </div>
+
+        <!-- 1er bloc image et texte -->
+        <div class="texte_image">
+            <img src="{% static 'css/photo_présentation.png' %}" alt="photo de tombe nettoyée" height="300px"
+                width="auto">
+            <div class="accueil_texte">
+                <p>
+                    L'<strong>entreprise CleanerTombe</strong> est une entreprise de <strong>nettoyage</strong> et
+                    <strong>d'entretien de sépulture</strong>.
+                    <br><br>
+                    Nous nous engageons à prendre soin des souvenirs de vos proches avec <em>respect</em> et
+                    <em>délicatesse</em>.
+                </p>
+            </div>
+        </div>
+        <hr class="separateur-style">
+
+        <!-- 2eme bloc image et texte -->
+        <div class="texte_image">
+            <div class="accueil_texte">
+                <p>
+                    Le <strong>nettoyage de chaque sépulture</strong> est réalisé avec des produits <em>naturels</em>,
+                    <em>biodégradables</em> et respectueux de l'environnement.
+                    <br><br>
+                    Nos produits sont conformes aux <strong>règlements de chaque cimetière</strong> et
+                    <em>protègent</em> la matière des tombes comme la pierre (le granit, le marbre, etc) et le métal si
+                    présents.
+                </p>
+            </div>
+            <img src="{% static 'css/nettoyage.jpg' %}" alt="personne nettoyant une tombe" height="300px" width="auto">
+        </div>
+        <hr class="separateur-style">
+        <div class="texte_image bas_accueil">
+            <img src="{% static 'css/rendez_vous.jpg' %}" alt="photo d'une prise de rendez-vous" height="300px"
+                width="auto">
+            <div class="accueil_texte" width="600px">
+                <p>
+                    <strong>Les prises de rendez-vous</strong> se font par <em>email</em> ou par <em>téléphone</em>.
+                    Pour tout <strong>rendez-vous urgent</strong> concernant une prestation, merci de prévoir une
+                    réservation
+                    <strong>au moins deux semaines à l'avance</strong> afin de garantir une date qui vous conviendra au
+                    mieux.
+                </p>
+
+                <p>
+                    Pour toute question concernant les <a href="{% url 'Tarif' %}"><strong>tarifs</strong></a>, les
+                    <strong>prestations</strong> ou pour toute autre information,
+                    <a href="{% url 'Contact' %}"><strong>cliquez ici</strong></a>.
+                </p>
+
+                <p>
+                    Toute <strong>prestation spéciale</strong> nécessitera un <strong>devis personnalisé</strong> avec
+                    un
+                    <strong>entretien téléphonique</strong> pour bien définir vos besoins.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</div>
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends 'DocBlog/base.html' %}
+{% load static %}
+
+{% block titre %} Tombe pleine terre {% endblock %}
+{% block titre_page %} <h1>Tombe pleine terre</h1> {% endblock %}
+
+
+{% block content %}
+<div class="entretien-bloc">
+    <div class="container">
+        <hr>
+
+        <p>
+            <strong><span class="highlight">La tombe plaine terre</span></strong> c'est une <strong><span class="highlight">tombe naturelle</span></strong> car elle est directement creusée
+            dans la <strong><span class="highlight">terre</span></strong>.
+            Il n'y a pas de <strong><span class="highlight">caveau</span></strong> qui protège le <strong><span
+                    class="highlight">cercueil</span></strong> ce qui permet au défunt d'être inhumé dans un
+            <strong><span class="highlight">milieu naturel</span></strong>.
+            Sur cette tombe, on peut y <strong><span class="highlight">planter des fleurs</span></strong> qui permettent
+            de symboliser la mémoire du défunt.
+        </p>
+
+        <div class="section-title">
+            <h3>L'entretien d'une tombe pleine terre</h3>
+        </div>
+
+        <p>
+            On va <strong><span class="highlight">ramasser régulièrement</span></strong> les <strong><span
+                    class="highlight">feuilles mortes</span></strong>,
+            les <strong><span class="highlight">fleurs fanées</span></strong> et les <strong><span
+                    class="highlight">branches</span></strong>.
+            Surveillance du <strong><span class="highlight">sol</span></strong> en cas d'<strong><span
+                    class="highlight">affaissement</span></strong> avec le temps,
+            on va <strong><span class="highlight">égaliser la terre</span></strong> et en rajouter si besoin.
+        </p>
+
+        <p>
+            Il faut <strong><span class="highlight">enlever les mauvaises herbes</span></strong> à la main,
+            surtout pas utiliser de <strong><span class="highlight">désherbant</span></strong>.
+        </p>
+
+        <div class="section-title">
+            <h3>La fréquence d'entretien recommandé</h3>
+        </div>
+
+        <p>
+            Il est recommandé de le faire <strong><span class="highlight">une fois par mois</span></strong>
+            au <strong><span class="highlight">printemps</span></strong> et en <strong><span
+                    class="highlight">été</span></strong> durant les saisons de <strong><span class="highlight">pousse
+                    rapide</span></strong>.
+            Puis il est recommandé de le faire <strong><span class="highlight">tous les deux mois</span></strong> en
+            <strong><span class="highlight">automne</span></strong> et en <strong><span
+                    class="highlight">hiver</span></strong>.
+        </p>
+
+        <p>
+            Il est important d'<strong><span class="highlight">intervenir rapidement</span></strong> après des
+            <strong><span class="highlight">grosses pluies</span></strong>,
+            une <strong><span class="highlight">canicule</span></strong> ou de <strong><span class="highlight">fortes
+                    tempêtes</span></strong>
+            pour enlever les <strong><span class="highlight">débris des plantes sèches</span></strong> en cas de
+            canicule
+            et vérifier l'<strong><span class="highlight">affaissement</span></strong> en cas de grosse pluie.
+        </p>
+
+    </div>
+</div>
+{% block boutton %}
+
+<div class="boutton_tarif">
+    <ul class="slide-right">
+        <li>
+            <a href="{% url 'tarif' 7 %}">Tarif</a>
+        </li>
+    </ul>
+</div>
+</div>
+{% endblock %}
+
+{% endblock %}

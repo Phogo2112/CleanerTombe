@@ -1,0 +1,73 @@
+{% extends 'DocBlog/base.html' %}
+{% load static %}
+
+{% block titre %} Cavurne {% endblock %}
+{% block titre_page %} <h1>Cavurne</h1> {% endblock %}
+
+{% block content %}
+<div class="entretien-bloc">
+    <div class="container">
+        <hr>
+
+        <p>
+            <strong><span class="highlight">Cavurne</span></strong> est une <strong><span class="highlight">construction en béton</span></strong> ou en <strong><span class="highlight">granit</span></strong> enterrée 
+            qui peut contenir de <strong><span class="highlight">1 à 4 urnes</span></strong>. 
+            Parfois, il peut en contenir plus. 
+            Cette construction en béton ou en granit est recouverte d’une <strong><span class="highlight">dalle</span></strong> ou une <strong><span class="highlight">plaque gravée</span></strong> 
+            avec le <strong><span class="highlight">nom</span></strong> et les <strong><span class="highlight">dates des défunts</span></strong>.
+        </p>
+
+        <div class="section-title">
+            <h3>L’entretien d’un cavurne</h3>
+        </div>
+
+        <p>
+            On commence par enlever la <strong><span class="highlight">poussière</span></strong>, la <strong><span class="highlight">saleté</span></strong>, 
+            les <strong><span class="highlight">fleurs fanées</span></strong> et les <strong><span class="highlight">insectes</span></strong>. 
+            Ensuite, on lave la surface en mouillant avec de <strong><span class="highlight">l'eau savonneuse</span></strong> la dalle ou les plaques, 
+            puis on <strong><span class="highlight">frotte doucement</span></strong> avec une <strong><span class="highlight">brosse douce</span></strong> 
+            afin de ne pas effacer les gravures.
+            Bien <strong><span class="highlight">rincer</span></strong> la dalle ou la plaque pour enlever tout le savon, puis <strong><span class="highlight">sécher</span></strong> 
+            à l'aide d’un chiffon doux.
+        </p>
+
+        <div class="section-title">
+            <h3>Nettoyage des ornements et souvenirs</h3>
+        </div>
+
+        <p>
+            Le nettoyage des <strong><span class="highlight">ornements funéraires</span></strong> se fait souvent en même temps que le nettoyage du cavurne. 
+            Le nettoyage des <strong><span class="highlight">plaques commémoratives</span></strong> et des <strong><span class="highlight">croix</span></strong> se fait avec une 
+            <strong><span class="highlight">éponge douce</span></strong> ou une <strong><span class="highlight">brosse souple</span></strong> et du <strong><span class="highlight">savon doux</span></strong>.
+            En cas de <strong><span class="highlight">métal</span></strong> (fer, bronze), il faut utiliser un <strong><span class="highlight">produit antirouille adapté</span></strong>.
+            Le nettoyage des <strong><span class="highlight">fleurs artificielles</span></strong> peut être fait à l’<strong><span class="highlight">eau tiède</span></strong> 
+            avec du <strong><span class="highlight">savon doux</span></strong>, puis mis à sécher soigneusement.
+        </p>
+
+        <div class="section-title">
+            <h3>La fréquence d’entretien recommandée</h3>
+        </div>
+
+        <p>
+            Il est recommandé pour un <strong><span class="highlight">nettoyage léger</span></strong> de le faire tous les <strong><span class="highlight">1 à 2 mois</span></strong>.
+            Ce nettoyage régulier va permettre de <strong><span class="highlight">prévenir les problèmes</span></strong> avant qu'on les voie 
+            ou qu'ils ne deviennent plus graves, d’autant plus si le cavurne est situé dans un environnement à <strong><span class="highlight">climatique variable</span></strong>.
+
+            Il y a l’<strong><span class="highlight">entretien complet</span></strong> qui est recommandé de faire tous les <strong><span class="highlight">6 mois à 1 an</span></strong>.
+            Il permet de faire un <strong><span class="highlight">nettoyage en profondeur</span></strong> et de <strong><span class="highlight">prolonger la durée de vie</span></strong> des matériaux.
+            Ce nettoyage empêche les <strong><span class="highlight">salissures</span></strong> ou <strong><span class="highlight">dommages permanents</span></strong>.
+        </p>
+    </div>
+</div>
+
+{% block boutton %}
+
+<div class="boutton_tarif">
+    <ul class="slide-right">
+        <li>
+            <a href="{% url 'tarif' 2 %}" >Tarif</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'DocBlog/base.html' %}
+{% load static %}
+
+{% block titre %} Blog {% endblock %}
+{% block titre_page %} <h1>B l o g</h1> {% endblock %}
+{% block fond_container %}
+<div class="fond-blog">
+  {% block content %}
+  <div class="grid">
+    {% for t in tombe %}
+    <div class="card">
+      <h2>{{ t.name }}</h2>
+      {% if t.image %}
+      <a href="{% url 'blog_article' t.id %}">
+        <img src="{% static t.image %}" alt="{{ t.name }}">
+      </a>
+      {% else %}
+      <p>Aucune image disponible</p>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endblock %}
+</div>
+{% endblock %}

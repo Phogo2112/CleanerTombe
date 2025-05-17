@@ -1,0 +1,86 @@
+{% extends 'DocBlog/base.html' %}
+{% load static %}
+
+{% block titre %} Tombe simple {% endblock %}
+{% block titre_page %}<h1> Tombe simple</h1> {% endblock %}
+
+
+{% block sans_centre_element %}
+{% block content %}
+<div class="entretien-bloc">
+    <div class="container">
+        <hr>
+
+        <p>
+            <strong><span class="highlight">Une tombe simple</span></strong> <strong><span class="highlight">mesure 2m²(1m x 2m)</span></strong> elle est constituées  <strong><span class="highlight"> d'une stèle</span></strong>, une <strong><span class="highlight">dalle funéraire</span></strong>, 
+            il peut y avoir une <strong><span class="highlight">bordure</span></strong> ou une <strong><span class="highlight">jardinière</span></strong>.
+            Elles sont constituées de plusieurs matériaux possibles (<strong><span class="highlight">granit</span></strong>, <strong><span class="highlight">marbre</span></strong>, 
+            <strong><span class="highlight">béton</span></strong> ou <strong><span class="highlight">pierre</span></strong>).
+            Sur ce type de tombe, l’on y dispose souvent des <strong><span class="highlight">ornements</span></strong> de style <strong><span class="highlight">croix</span></strong>, 
+            <strong><span class="highlight">plaque funéraire</span></strong>, <strong><span class="highlight">photo</span></strong> ou <strong><span class="highlight">médaillons</span></strong> 
+            avec une <strong><span class="highlight">photo du défunt</span></strong>, des <strong><span class="highlight">pots de fleurs naturelles ou artificielles</span></strong> ; 
+            il peut y avoir des <strong><span class="highlight">bougies</span></strong> ou des <strong><span class="highlight">lanternes étanches</span></strong> afin de les allumer durant les visites.
+        </p>
+
+        <div class="section-title">
+            <h3>L’entretien d’une tombe simple</h3>
+        </div>
+
+        <p>
+            L'<strong><span class="highlight">entretien</span></strong> est important pour préserver la <strong><span class="highlight">pierre</span></strong> et les <strong><span class="highlight">ornements</span></strong>. 
+            Il faut commencer par <strong><span class="highlight">balayer les feuilles mortes</span></strong>, les <strong><span class="highlight">toiles d’araignées</span></strong> 
+            ou autres <strong><span class="highlight">saletés</span></strong> autour de la tombe.
+        </p>
+
+        <p>
+            Le <strong><span class="highlight">nettoyage de la pierre tombale</span></strong> se fait avec une <strong><span class="highlight">brosse souple</span></strong>, 
+            un <strong><span class="highlight">chiffon doux</span></strong>, de <strong><span class="highlight">l’eau tiède</span></strong> et du <strong><span class="highlight">savon noir</span></strong>. 
+            Il ne faut pas utiliser de <strong><span class="highlight">produit abrasif</span></strong> qui pourrait endommager les gravures ou la pierre. 
+            Il est recommandé d’utiliser une <strong><span class="highlight">brosse souple</span></strong> ou un <strong><span class="highlight">coton-tige</span></strong> 
+            pour les inscriptions et les recoins de la tombe.
+            Si la tombe est recouverte de <strong><span class="highlight">gravier</span></strong>, il faut veiller à les <strong><span class="highlight">remettre à niveau</span></strong> à chaque passage.
+        </p>
+
+        <div class="section-title">
+            <h3>Nettoyage des ornements et souvenirs</h3>
+        </div>
+
+        <p>
+            Le <strong><span class="highlight">nettoyage des ornements funéraires</span></strong> se fait souvent en même temps que la tombe. 
+            Le nettoyage des <strong><span class="highlight">plaques commémoratives</span></strong> et des <strong><span class="highlight">croix</span></strong> se fait avec une 
+            <strong><span class="highlight">éponge douce</span></strong> ou une <strong><span class="highlight">brosse souple</span></strong> et du <strong><span class="highlight">savon doux</span></strong>.
+            En cas de <strong><span class="highlight">métal</span></strong> (fer, bronze), utiliser un <strong><span class="highlight">produit antirouille adapté</span></strong>.
+            Le nettoyage des <strong><span class="highlight">fleurs artificielles</span></strong> peut être fait à <strong><span class="highlight">l’eau tiède</span></strong> avec un 
+            <strong><span class="highlight">savon doux</span></strong>, puis mis à sécher soigneusement.
+        </p>
+
+        <div class="section-title">
+            <h3>Fréquence d'entretien recommandée</h3>
+        </div>
+
+        <p>
+            Il est recommandé de faire un <strong><span class="highlight">entretien</span></strong> <strong><span class="highlight">2 à 4 fois par an</span></strong>, notamment :
+            <ul>
+                <li>À la <strong><span class="highlight">Toussaint</span></strong></li>
+                <li>Au <strong><span class="highlight">printemps</span></strong>, juste après l’hiver</li>
+                <li>En <strong><span class="highlight">été</span></strong> en cas de <strong><span class="highlight">plantations</span></strong> ou de <strong><span class="highlight">sécheresse</span></strong></li>
+            </ul>
+            Si l’entretien est fait régulièrement, il permet une <strong><span class="highlight">meilleure tenue</span></strong> de la pierre et des ornements dans le temps.
+        </p>
+
+    </div>
+</div>
+{% block boutton %}
+
+<div class="boutton_tarif">
+    <ul class="slide-right">
+        <li>
+            <a href="{% url 'tarif' 1 %}" >Tarif</a>
+        </li>
+    </ul>
+</div>
+</div>
+{% endblock %}
+</div>
+{% endblock %}
+{% endblock %}

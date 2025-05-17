@@ -1,0 +1,70 @@
+{% extends 'DocBlog/base.html' %}
+{% load static %}
+
+{% block titre %} Stèle cénotaphe {% endblock %}
+{% block titre_page %} <h1>Stèle cénotaphe</h1> {% endblock %}
+
+{% block content %}
+<div class="entretien-bloc">
+    <div class="container">
+        <hr>
+
+        <p>
+            <strong><span class="highlight">Une stèle cénotaphe</span></strong> c'est un <strong><span class="highlight">monument en hommage</span></strong> à une personne ou plusieurs personnes 
+            dont le corps n'est pas présent sous le monument, c'est donc une <strong><span class="highlight">stèle symbolique</span></strong> 
+            constituée de <strong><span class="highlight">pierre</span></strong> comme le <strong><span class="highlight">marbre</span></strong> ou le <strong><span class="highlight">granit</span></strong>, 
+            ce qui permet aux proches d'avoir un <strong><span class="highlight">lieu de mémoire</span></strong> pour le défunt qui est inhumé ou disparu ailleurs.
+        </p>
+
+        <div class="section-title">
+            <h3>Entretien d'une stèle cénotaphe</h3>
+        </div>
+
+        <p>
+            L'entretien commence par un <strong><span class="highlight">dépôt de cirage</span></strong> avec un <strong><span class="highlight">chiffon sec</span></strong> 
+            ensuite on mouille la pierre avec de <strong><span class="highlight">l'eau</span></strong>, 
+            on y ajoute du <strong><span class="highlight">savon doux</span></strong> avec une <strong><span class="highlight">éponge douce</span></strong> 
+            en frottant doucement. Il faut nettoyer délicatement les <strong><span class="highlight">gravures</span></strong> 
+            avec une <strong><span class="highlight">éponge douce</span></strong> ou une <strong><span class="highlight">brosse douce</span></strong> et du <strong><span class="highlight">savon doux</span></strong>, 
+            puis rincer à <strong><span class="highlight">l'eau claire</span></strong>.
+        </p>
+
+        <p>
+            On va utiliser un <strong><span class="highlight">chiffon propre et sec</span></strong> pour bien sécher 
+            la <strong><span class="highlight">stèle</span></strong> et les <strong><span class="highlight">gravures</span></strong> 
+            afin d'éviter les tâches dues au nettoyage.
+        </p>
+
+        <p>
+            S'il y a des <strong><span class="highlight">graviers</span></strong> ou de <strong><span class="highlight">l'herbe</span></strong> autour de la stèle, 
+            il faut <strong><span class="highlight">balayer</span></strong> ou <strong><span class="highlight">ratisser</span></strong> autour, 
+            ramasser les <strong><span class="highlight">feuilles mortes</span></strong>, 
+            les <strong><span class="highlight">fleurs fanées</span></strong> et les <strong><span class="highlight">déchets éventuels</span></strong>.
+        </p>
+
+        <div class="section-title">
+            <h3>Fréquence d'entretien recommandée</h3>
+        </div>
+
+        <p>
+            Il est recommandé de faire un <strong><span class="highlight">entretien 2 à 4 fois par an</span></strong>, 
+            au <strong><span class="highlight">printemps</span></strong> pour un nettoyage après l'hiver, 
+            un nettoyage avant la <strong><span class="highlight">Toussaint</span></strong> afin de préparer la commémoration,
+            un autre nettoyage après <strong><span class="highlight">l'automne</span></strong> pour enlever les feuilles mortes 
+            et les traces naturelles, puis en <strong><span class="highlight">été</span></strong> pour un nettoyage de la poussière 
+            et de la pollution afin d'enlever ce qui amplifie les effets du soleil sur la pierre.
+        </p>
+
+    </div>
+</div>
+{% block boutton %}
+
+<div class="boutton_tarif">
+    <ul>
+        <li>
+            <a href="{% url 'tarif' 6 %}">Tarif</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}
+{% endblock %}

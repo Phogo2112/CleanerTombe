@@ -1,0 +1,59 @@
+{% extends 'DocBlog/base.html' %}
+{% load static %}
+
+<!-- titre de page favicon -->
+
+{% block titre %} Contact {% endblock %}
+
+<!-- titre de la page -->
+
+{% block titre_page %} <h1>C o n t a c t</h1> {% endblock %}
+
+
+<!-- contenue de la main -->
+{% block sans_container %}
+<div class="contact_container">
+    {% block content %}
+    <div class="container_contact">
+  
+        <!-- Partie carte au-dessus -->
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps?q=St-Christophe-du-Ligneron&z=10&output=embed"
+            width="100%"
+            height="300"
+            style="border:0; border-radius: 12px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      
+        <!-- Partie contact en dessous -->
+        <div class="centered-container">
+          <div class="centered-box">
+            <div class="logo_nom">
+              <img src="{% static 'css/favicon.png' %}" alt="logo CleanerTombe" style="height: auto; width: 200px;">
+            </div>
+            <div class="infos_contact">
+              <h2>n° siret : 927777680</h2>
+              <h2>situé : St-Christophe-du-Ligneron</h2>
+              <h2>📞 n° téléphone : <a href="tel:0755667761">07 55 66 77 61</a></h2>
+              <h2>✉️ email : <a href="mailto:sulydain85@gmail.com">sulydain85@gmail.com</a></h2>
+            </div>
+      
+            <div class="horaires">
+              <h2>🕑 Horaires d'ouverture :</h2>
+              <ul>
+                <li>Lundi - Vendredi : 8h - 18h30</li>
+                <li>Samedi et Dimanche : Fermé</li>
+              </ul>
+            </div>
+      
+          </div>
+        </div>
+      
+      </div>
+    {% endblock %}
+</div>
+{% endblock %}
