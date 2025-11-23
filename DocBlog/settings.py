@@ -3,28 +3,26 @@ from dotenv import load_dotenv
 import os
 
 
-load_dotenv()
-
-
-
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(BASE_DIR / '.env.locale')
+load_dotenv(BASE_DIR / '.env.example', override=False)
+load_dotenv(BASE_DIR / '.env.development', override=True)
 
 
-SECRET_KEY = os.dotenv('SECRET_KEY')
 
-DEBUG = os.dotenv("DEBUG")== True
-ALLOWED_HOSTS = os.dotenv("ALLOWED_HOST").split(",")
+SECRET_KEY = os.getenv('SECRET_KEY')
 
-admins_env = os.getenv("DJANGO_ADMINS")
+DEBUG = os.getenv("DEBUG", "True").lower() in ("true", "1", "yes")
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS","localhost").split(",")
+
+admins_env = os.getenv("DJANGO_ADMINS", "")
+ADMINS = []
 if admins_env:
-    name, email = admins_env.split(",")
-    ADMINS = [(name, email)]
-else:
-    ADMINS = []
+    for pair in admins_env.split(";"):
+        name, email = pair.split(",")
+        ADMINS.append((name.strip(), email.strip()))
 
 
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
